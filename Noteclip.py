@@ -1,14 +1,13 @@
 # Notecut: a simple program to get notes pasted directly in your clipboard
 
-import os, pyperclip
+import sys, pyperclip
 
-input = input("Please insert file name: > ")
+note = sys.argv[1]
+file = note_name.lower() + ".txt"
 
-title = input.lower() + ".txt"
-
-if title in notes:
-    pyperclip.copy(title.open())
-    print('Your ' + input +'note has been copied to the clipboard.')
-    title.close()
+if file in files:
+    pyperclip.copy(file.open())
+    print('The content of '+ file +'has been copied to the clipboard.')
+    file.close()
 else:
-    print('There is no note called ' + title + 'in this folder.')
+    print('There is no note called ' + file + 'in this folder.')
