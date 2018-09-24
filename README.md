@@ -1,4 +1,4 @@
-# Project Noteclip
+# Noteclip
 
 Noteclip is a simple Python program to retrieve notes directly in the clipboard using the Pyperclip module. 
 
@@ -26,6 +26,8 @@ Examples include:
 
 * Text files with the information to retrieved, named appropriately (e.g. "work_address.txt")
 
+* Modules **sys**, **os** and **pyperclip** 
+
 * Pyhton program which can be found in this repo
 
 * Batch file to automate the execution of the program directly from the "Run" command
@@ -36,6 +38,6 @@ Assuming to work on Windows, the program would work as follow:
 
 1. Type **Win + R** and insert the name of the file where your needed information is stored
 
-2. The content of the file is **read and copied** in the clipboard using the Pyperclip module
+2. The content of the file is read and **copied in the clipboard** using the Pyperclip module
 
 3. **Paste**. Done.
