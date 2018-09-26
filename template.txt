@@ -1,7 +1,7 @@
-Dear Mr. Person, 
+Dear person, 
 
 This is an email template I am using to test a little program, Noteclip. I have absolutely nothing interesting to say, but thank you for reading this. I am sure at this point you may have realized that this is a pretty boring template. It is, indeed.
 
 I'll stop here.
 
-Have a great day, Mr. Person!
+Have a great day, person!
