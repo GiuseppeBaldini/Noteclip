@@ -1,9 +1,19 @@
 # Python 3
 # Noteclip: a simple program to get notes pasted directly in your clipboard
 
-import os, sys, pyperclip
+import sys
+import os
 
-note_name = sys.argv[1]
+try:
+    import pyperclip
+except ImportError or ModuleNotFoundError:
+    print('Pyperclip module not found. Please download it.')
+
+try:
+    note_name = sys.argv[1]
+except IndexError:
+    note_name = input('Please input the name of your note here: > ')
+
 file = note_name.lower() + ".txt"
 working_dir = os.chdir('C:\\Users\\Giuseppe\\Documents\\Notes')
 
