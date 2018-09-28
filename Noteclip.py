@@ -24,8 +24,9 @@ def find(file, path):
             print (file_name +' found in ' + root)
             new_working_dir = root
             return new_working_dir
-        else:
-            pass
+    else:
+        print('There is no file called ' + file_name + ' in ' + path)
+        exit()
 
 nwd = find(file_name, notes_dir)
 working_dir = os.chdir(nwd)
