@@ -37,15 +37,14 @@ Examples include:
 2. Install **pyperclip** 
 
 3. Assign <code>notes_path</code> variable to highest level folder where all your notes are
-
-4. Change filepath in Batch file to reflect location of the program on your computer  
     
 NOTE: _Using a path too broad makes the scan too slow. I would suggest keeping everything at least 3 levels below_ C:\ 
 
 ### Execution from Run command
 
-I included a batch file to run the program directly from the Run window.  
-On Windows, open it using the shortcut <code> Win + R</code> and then type <code> noteclip [note name] </code>. 
+I included a batch file to run the program directly from the Run window simply typing <code> noteclip [note name] </code>. 
+
+NOTE: _Change filepath in Batch file to reflect location of the program on your computer_
 
 ### Improvements
 
