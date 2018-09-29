@@ -1,5 +1,5 @@
-# Python 3
-# Noteclip: a simple program to get notes copied directly in your clipboard
+# Python 3.6 - Windows 10.0.16299
+# Noteclip: a simple program to get notes copied directly in the clipboard
 
 import sys
 import os
@@ -16,7 +16,7 @@ except IndexError:
 
 starting_dir = os.getcwd()
 file_name = note_name + ".txt"
-notes_dir = 'C:\\Users\\Giuseppe\\Documents'
+notes_path = 'C:\\Users\\Giuseppe\\Documents'
 
 def find(file, path):
     for root, dirs, files in os.walk(path):
@@ -26,10 +26,10 @@ def find(file, path):
             return new_working_dir
     else:
         print('There is no file called ' + file_name + ' in ' + path +
-            '\nPlease make sure your spelling and capitalisation are correct.')
+            '\nPlease make sure spelling and capitalisation are correct.')
         exit()
 
-nwd = find(file_name, notes_dir)
+nwd = find(file_name, notes_path)
 
 os.chdir(nwd)
 
