@@ -50,7 +50,7 @@ NOTE: _Change filepath in Batch file to reflect location of the program on your 
 
 These are some of the things which I believe could be done to make this little program more useful:   
 
-* Check input for case sensitivity and common mistakes  
 * Compatibility with more file formats beyond <code> .txt </code>  
+* Check input for case sensitivity and common mistakes  
 * In case of multiple files with same name, possibility to choose appropriate file 
 * Optional argument to read part of the content (i.e. a number of lines from the top or from a given position)
