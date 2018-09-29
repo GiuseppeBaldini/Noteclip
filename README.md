@@ -40,7 +40,7 @@ Examples include:
 
 4. Change filepath in Batch file to reflect location of the program on your computer  
     
-NOTE: _Using a path too broad makes the scan too slow. I would suggest keeping everything at least 3 levels below C:\ 
+NOTE: _Using a path too broad makes the scan too slow. I would suggest keeping everything at least 3 levels below_ C:\ 
 
 ### Execution from Run command
 
