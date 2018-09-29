@@ -25,12 +25,8 @@ def find(file, path):
             new_working_dir = root
             return new_working_dir
     else:
-<<<<<<< HEAD
         print('There is no file called ' + file_name + ' in ' + path +
             '\nPlease make sure your spelling and capitalisation are correct.')
-=======
-        print('There is no file called ' + file + ' in ' + path)
->>>>>>> 5783dfc7d02ae9eb086954e1a91a0dec9c75f8ad
         exit()
 
 nwd = find(file_name, notes_dir)
