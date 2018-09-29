@@ -42,7 +42,7 @@ NOTE: _Using a path too broad makes the scan too slow. I would suggest keeping e
 
 ### Execution from Run command
 
-I included a batch file to run the program directly from the Run window simply typing <code> noteclip [note name] </code>. 
+I included a batch file to run the program directly from the Run window simply typing <code>noteclip [note name]</code>. 
 
 NOTE: _Change filepath in Batch file to reflect location of the program on your computer_
 
