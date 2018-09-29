@@ -14,24 +14,24 @@ try:
 except IndexError:
     note_name = input('Please input the name of your note here: > ')
 
-starting_dir = os.getcwd()
+start_working_dir = os.getcwd()
 file_name = note_name + ".txt"
 notes_path = 'C:\\Users\\Giuseppe\\Documents'
 
 def find(file, path):
-    for root, dirs, files in os.walk(path):
+    for root, dirs, files in os.walk(path, topdown = False):
         if file in files:
             print (file +' found in ' + root)
-            new_working_dir = root
-            return new_working_dir
+            temp_working_dir = root
+            return temp_working_dir
     else:
         print('There is no file called ' + file_name + ' in ' + path +
             '\nPlease make sure spelling and capitalisation are correct.')
         exit()
 
-nwd = find(file_name, notes_path)
+twd = find(file_name, notes_path)
 
-os.chdir(nwd)
+os.chdir(twd)
 
 def copy(the_file):
     file_text = open(the_file)
@@ -42,4 +42,4 @@ def copy(the_file):
 
 copy(file_name)
 
-os.chdir(starting_dir)
+os.chdir(start_working_dir)
