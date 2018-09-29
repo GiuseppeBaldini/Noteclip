@@ -44,12 +44,12 @@ NOTE: _Using a path too broad makes the scan too slow. I would suggest keeping e
 
 ### Execution from Run command
 
-I included a batch file to run the program directly from the Run window. 
+I included a batch file to run the program directly from the Run window.  
 On Windows, open it using the shortcut <code> Win + R</code> and then type <code> noteclip [note name] </code>. 
 
 ### Improvements
 
-These are some of the things which can I believe could be done to make this little program more useful:   
+These are some of the things which I believe could be done to make this little program more useful:   
 
 * Check input for case sensitivity and common mistakes  
 * Compatibility with more file formats beyond <code> .txt </code>  
