@@ -2,7 +2,15 @@
 
 Noteclip is a simple Python program to retrieve notes directly in the clipboard using the Pyperclip module. 
 
-### Why is it useful?
+### Introduction
+
+Given an <code>argument</code>, the program does 2 things:
+
+1. Searches (bottom-up) for <code>argument.txt</code> and returns its filepath
+
+2. Copies the content of <code>argument.txt</code> in the clipboard so it's ready to be pasted
+
+### Use cases
 
 Noteclip can be used to store medium/long pieces of information that can be kept in plaintext. 
 
@@ -16,28 +24,29 @@ Examples include:
 
 **I do not recommend to use this program to retrieve extremely sensitive information such as:**
 
-* Identification documents (Passport info, Social Security Number etc.)
+* Identification information (Passport number, Social Security Number etc.)
 
 * Bank details (Account information, card information etc.)
 
 * Passwords and other secturity details
 
-### What is needed?
+### Preparation
 
-* Text files with the information to retrieved, named appropriately (e.g. "work_address.txt")
+1. Create notes as .txt files
 
-* Modules **sys**, **os** and **pyperclip** 
+2. Install **pyperclip** 
 
-* Pyhton program which can be found in this repo
+3. Assign <code>notes_path</code> variable to highest level folder where all your notes are*
 
-* Batch file to automate the execution of the program directly from the "Run" command
+4. Change filepath in Batch file to reflect location of the program on your computer  
+    
+\* **NOTE**: _Using a path too broad makes the scan too slow.  I would suggest keeping everything at least 3 levels below C:\ _
 
-### How does it work? 
+### Execution from Run command
 
-Assuming to work on Windows, the program would work as follow:
+I included a batch file to run the program directly from the Run window.  
+All I need to do now is use the shortcut <code> Win + R</code> to open the Run window and the type <code> noteclip [note name] </code>. 
 
-1. Type **Win + R** and insert the name of the file where your needed information is stored
+### Limitations
 
-2. The content of the file is read and **copied in the clipboard** using the Pyperclip module
 
-3. **Paste**. Done.
