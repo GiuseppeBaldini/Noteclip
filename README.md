@@ -32,9 +32,9 @@ Examples include:
 
 ### Preparation
 
-1. Create notes as .txt files
+1. Install **pyperclip** 
 
-2. Install **pyperclip** 
+2. Create notes as .txt files
 
 3. Assign <code>notes_path</code> variable to highest level folder where all your notes are
     
@@ -44,7 +44,7 @@ NOTE: _Using a path too broad makes the scan too slow. I would suggest keeping e
 
 I included a batch file to run the program directly from the Run window simply typing <code>noteclip [note name]</code>. 
 
-NOTE: _Change filepath in Batch file to reflect location of the program on your computer_
+NOTE: _Change filepath in Batch file to reflect location of the program on your computer._
 
 ### Improvements
 
