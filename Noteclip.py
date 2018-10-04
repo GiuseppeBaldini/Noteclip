@@ -5,19 +5,19 @@
 import sys
 import os
 
-# Pyperclip is not a built-in module, remind users to download it if necessary.
+# Pyperclip is not a built-in module, remind users to download it if necessary
 try:
     import pyperclip
 except ImportError or ModuleNotFoundError:
     print('Pyperclip module not found. Please download it.')
 
-# If the argument is missing, let users input it directly.
+# If the argument is missing, let users input it directly
 try:
     note_name = sys.argv[1]
 except IndexError:
     note_name = input('Please input the name of your note here: > ')
 
-# Define 3 key variables: current working directory, file name and path to scan.
+# Define 3 key variables: current working directory, file name and path to scan
 start_working_dir = os.getcwd()
 file_name = note_name + ".txt"
 notes_path = r'C:\Users\Giuseppe\Documents'
@@ -40,7 +40,7 @@ def find(file, path):
 
 twd = find(file_name, notes_path)
 
-# Temporarily change the working directory to the one where we found the file.
+# Temporarily change the working directory to the one where we found the file
 os.chdir(twd)
 
 
@@ -54,5 +54,5 @@ def copy(the_file):
 
 copy(file_name)
 
-# Come back to the starting working directory.
+# Come back to the starting working directory
 os.chdir(start_working_dir)
