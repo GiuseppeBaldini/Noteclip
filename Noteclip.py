@@ -10,6 +10,7 @@ try:
     import pyperclip
 except ImportError or ModuleNotFoundError:
     print('Pyperclip module not found. Please download it.')
+    exit()
 
 # If the argument is missing, let users input it directly
 try:
