@@ -8,7 +8,7 @@ import os
 # Pyperclip is not a built-in module, remind users to download it if necessary
 try:
     import pyperclip
-except ImportError or ModuleNotFoundError:
+except (ImportError, ModuleNotFoundError):
     print('Pyperclip module not found. Please download it.')
     exit()
 
