@@ -1,6 +1,6 @@
-# Python 3.6 - Windows 10.0.16299
-# Noteclip: a simple program to get notes copied directly in the clipboard
-# GitHub repo: https://github.com/GiuseppeBaldini/Noteclip
+#! python3
+
+# Noteclip: a simple program to retrieve notes directly in the clipboard
 
 import sys
 import os
