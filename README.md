@@ -1,6 +1,6 @@
 # Noteclip
 
-Noteclip is a simple Python program to retrieve notes directly in the clipboard using the Pyperclip module. 
+Noteclip is a simple Python program to retrieve notes directly in the clipboard using the [Pyperclip](https://github.com/asweigart/pyperclip) module. 
 
 ### Introduction
 
