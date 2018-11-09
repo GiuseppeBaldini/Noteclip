@@ -4,7 +4,7 @@ Noteclip is a simple Python program to retrieve notes directly in the clipboard 
 
 ### Introduction
 
-Given an <code>argument</code>, the program does 2 things:
+Given an <code>argument</code>, the program:
 
 1. Searches (bottom-up) for <code>argument.txt</code> and returns its filepath
 
