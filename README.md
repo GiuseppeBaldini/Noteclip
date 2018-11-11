@@ -1,43 +1,56 @@
 # Noteclip
 
-Noteclip is a simple Python program to retrieve notes directly in the clipboard using the Pyperclip module. 
+Noteclip is a simple Python program to retrieve notes directly in the clipboard using the [Pyperclip](https://github.com/asweigart/pyperclip) module. 
 
-### Why is it useful?
+### Introduction
+
+Given an <code>argument</code>, the program:
+
+1. Searches (bottom-up) for <code>argument.txt</code> and returns its filepath
+
+2. Copies the content of <code>argument.txt</code> in the clipboard so it's ready to be pasted
+
+### Use cases
 
 Noteclip can be used to store medium/long pieces of information that can be kept in plaintext. 
 
 Examples include:
 
-1. Frequently used / public contact information 
+* Frequently used / public contact information 
 
-2. Email / Messages templates for different situations
+* Email / Messages templates for different situations
 
-3. Temporary useful stuff you usually keep on Sticky Notes
+* Temporary useful stuff you usually keep on Sticky Notes
 
 **I do not recommend to use this program to retrieve extremely sensitive information such as:**
 
-* Identification documents (Passport info, Social Security Number etc.)
+* Identification information (Passport number, Social Security Number etc.)
 
 * Bank details (Account information, card information etc.)
 
 * Passwords and other secturity details
 
-### What is needed?
+### Preparation
 
-* Text files with the information to retrieved, named appropriately (e.g. "work_address.txt")
+1. Install **pyperclip** 
 
-* Modules **sys**, **os** and **pyperclip** 
+2. Create notes as .txt files
 
-* Pyhton program which can be found in this repo
+3. Assign <code>notes_path</code> variable to highest level folder where all your notes are
+    
+NOTE: _Using a path too broad makes the scan too slow. I would suggest keeping everything at least 3 levels below_ C:\ 
 
-* Batch file to automate the execution of the program directly from the "Run" command
+### Execution from Run command
 
-### How does it work? 
+I included a batch file to run the program directly from the Run window simply typing <code>noteclip [note name]</code>. 
 
-Assuming to work on Windows, the program would work as follow:
+NOTE: _Change filepath in Batch file to reflect location of the program on your computer._
 
-1. Type **Win + R** and insert the name of the file where your needed information is stored
+### Improvements
 
-2. The content of the file is read and **copied in the clipboard** using the Pyperclip module
+These are some of the things which I believe could be done to make this little program more useful:   
 
-3. **Paste**. Done.
+* Compatibility with more file formats beyond <code> .txt </code>  
+* Check input for case sensitivity and common mistakes  
+* In case of multiple files with same name, possibility to choose appropriate file 
+* Optional argument to read part of the content (i.e. a number of lines from the top or from a given position)
