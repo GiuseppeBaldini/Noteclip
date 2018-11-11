@@ -37,13 +37,19 @@ def find(file, path):
     else:
         print('There is no file called ' + file_name + ' in ' + path +
             '\nPlease make sure spelling and capitalisation are correct.')
-        exit()
+        return None
 
-twd = find(file_name, notes_path)
+# Prompt for a note until the file is found
+while True:
+    twd = find(file_name, notes_path)
+    if twd == None:
+        file_name = str(input('Please enter note name: > ') + '.txt')
+        continue
+    else:
+        break
 
 # Temporarily change the working directory to the one where we found the file
 os.chdir(twd)
-
 
 def copy(the_file):
     """ Open file, copy content to the clipboard using pyperclip, close it."""
