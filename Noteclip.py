@@ -21,7 +21,7 @@ except IndexError:
 # Define 3 key variables: current working directory, file name and path to scan
 start_working_dir = os.getcwd()
 file_name = note_name + ".txt"
-notes_path = r'C:\Users\Giuseppe\Documents'
+notes_path = r'C:\Users\Giuse\Documents'
 
 def find(file, path):
     """
